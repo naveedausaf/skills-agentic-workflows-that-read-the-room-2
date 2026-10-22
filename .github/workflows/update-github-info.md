@@ -18,6 +18,7 @@ network:
     - defaults
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[github-info] "
@@ -34,6 +35,7 @@ Keep `site/content/github-info.md` current and propose the change as a pull requ
 2. Use web fetch to read these public pages:
    - https://github.blog/latest/
    - https://github.blog/changelog/
+   - https://awesome-copilot.github.com/workflows/ (Awesome Copilot workflows)
 3. Update only `site/content/github-info.md` with accurate, concise information supported by those sources and guided by Mona's notes.
 4. If nothing meaningful has changed, call `noop` with a short reason.
 5. Otherwise open one pull request via the `create-pull-request` safe output, describing what changed and why, for Mona to review. Never write directly to `main`.
